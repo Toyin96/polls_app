@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 from .models import Question
 
@@ -10,3 +11,4 @@ def index(request):
         "questions": questions
     }
     return render(request, 'polls/home.html', context)
+
